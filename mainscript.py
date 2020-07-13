@@ -47,7 +47,6 @@ df_basic_clean1["normalized_job_title"].fillna("no job", inplace = True)
 # I import data to  get country description
 page = requests.get("https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Country_codes")
 soup = BeautifulSoup(page.content, 'html.parser')
-soup = BeautifulSoup(page.content, 'html.parser')
 list=soup.find_all('td')
 n_elements=len(list)
 lista=[]
